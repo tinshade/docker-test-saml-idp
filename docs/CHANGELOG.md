@@ -1,3 +1,10 @@
+## 2024-04-13 latest
+* Added SIMPLESAMLPHP_BASE_URL as a configurable ENV variable that allows for custom base URLs for your custom routed servers.
+* Updated readme
+* Updated changelog
+* Updated contributors log
+* Docker image updated and is available publically at `lordtinshade/saml-idp-testing`
+
 ## 2018-02-04 v1.15.2-1
 
 * Changed PHP version to 7.1 instead of 7.x because of compatibility issues.

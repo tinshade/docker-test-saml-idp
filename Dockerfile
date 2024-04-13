@@ -1,5 +1,5 @@
 FROM php:7.1-apache
-MAINTAINER Kristoph Junge <kristoph.junge@gmail.com>
+MAINTAINER Abhishek Iyengar <iyengar.abhi@gmail.com>
 
 # Utilities
 RUN apt-get update && \

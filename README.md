@@ -1,10 +1,8 @@
 # Docker Test SAML 2.0 Identity Provider (IdP)
 
-### This is a fork of kristophjunge/docker-test-saml-idp 's github repository!
+[![DockerHub Pulls](https://img.shields.io/docker/pulls/kristophjunge/test-saml-idp.svg)](https://hub.docker.com/r/kristophjunge/test-saml-idp/) [![DockerHub Stars](https://img.shields.io/docker/stars/kristophjunge/test-saml-idp.svg)](https://hub.docker.com/r/kristophjunge/test-saml-idp/) [![GitHub Stars](https://img.shields.io/github/stars/kristophjunge/docker-test-saml-idp.svg?label=github%20stars)](https://github.com/kristophjunge/docker-test-saml-idp) [![GitHub Forks](https://img.shields.io/github/forks/kristophjunge/docker-test-saml-idp.svg?label=github%20forks)](https://github.com/kristophjunge/docker-test-saml-idp) [![GitHub License](https://img.shields.io/github/license/kristophjunge/docker-test-saml-idp.svg)](https://github.com/kristophjunge/docker-test-saml-idp)
 
-[![DockerHub Pulls](https://img.shields.io/docker/pulls/lordtinshade/saml-idp-testing.svg)](https://hub.docker.com/r/lordtinshade/saml-idp-testing/) [![DockerHub Stars](https://img.shields.io/docker/stars/lordtinshade/saml-idp-testing.svg)](https://hub.docker.com/r/lordtinshade/saml-idp-testing/) [![GitHub Stars](https://img.shields.io/github/stars/tinshade/docker-test-saml-idp.svg?label=github%20stars)](https://github.com/tinshade/docker-test-saml-idp) [![GitHub Forks](https://img.shields.io/github/forks/tinshade/docker-test-saml-idp.svg?label=github%20forks)](https://github.com/tinshade/docker-test-saml-idp) [![GitHub License](https://img.shields.io/github/license/tinshade/docker-test-saml-idp.svg)](https://github.com/tinshade/docker-test-saml-idp)
-
-![Seal of Approval](https://raw.githubusercontent.com/tinshade/docker-test-saml-idp/master/seal.jpg)
+![Seal of Approval](https://raw.githubusercontent.com/kristophjunge/docker-test-saml-idp/master/seal.jpg)
 
 Docker container with a plug and play SAML 2.0 Identity Provider (IdP) for development and testing.
 
@@ -18,16 +16,28 @@ The contained version of SimpleSAMLphp is 1.15.2.
 
 
 ## Supported Tags
-
 - `latest` [(Dockerfile)](https://github.com/tinshade/docker-test-saml-idp/blob/master/Dockerfile)
+- `1.15` [(Dockerfile)](https://github.com/kristophjunge/docker-test-saml-idp/blob/1.15/Dockerfile)
+- `1.14` [(Dockerfile)](https://github.com/kristophjunge/docker-test-saml-idp/blob/1.14/Dockerfile)
 
 
 ## Changelog
 
-See [CHANGELOG.md](https://github.com/tinshade/docker-test-saml-idp/blob/master/docs/CHANGELOG.md) for information about the latest changes.
+See [CHANGELOG.md](https://github.com/kristophjunge/docker-test-saml-idp/blob/master/docs/CHANGELOG.md) for information about the latest changes.
 
 
 ## Usage
+
+```
+docker run --name=testsamlidp_idp \
+-p 8080:8080 \
+-p 8443:8443 \
+-e SIMPLESAMLPHP_SP_ENTITY_ID=http://app.example.com \
+-e SIMPLESAMLPHP_SP_ASSERTION_CONSUMER_SERVICE=http://localhost/simplesaml/module.php/saml/sp/saml2-acs.php/test-sp \
+-e SIMPLESAMLPHP_SP_SINGLE_LOGOUT_SERVICE=http://localhost/simplesaml/module.php/saml/sp/saml2-logout.php/test-sp \
+-d kristophjunge/test-saml-idp
+```
+
 
 ```
 docker run --name=saml_idp_server \
@@ -98,11 +108,11 @@ Click under `Authentication` > `Test configured authentication sources` > `test-
 
 ## Contributing
 
-See [CONTRIBUTING.md](https://github.com/tinshade/docker-test-saml-idp/blob/master/docs/CONTRIBUTING.md) for information on how to contribute to the project.
+See [CONTRIBUTING.md](https://github.com/kristophjunge/docker-test-saml-idp/blob/master/docs/CONTRIBUTING.md) for information on how to contribute to the project.
 
-See [CONTRIBUTORS.md](https://github.com/tinshade/docker-test-saml-idp/blob/master/docs/CONTRIBUTORS.md) for the list of contributors.
+See [CONTRIBUTORS.md](https://github.com/kristophjunge/docker-test-saml-idp/blob/master/docs/CONTRIBUTORS.md) for the list of contributors.
 
 
 ## License
 
-This project is licensed under the MIT license by Abhishek Iyengar.
+This project is licensed under the MIT license by Kristoph Junge.

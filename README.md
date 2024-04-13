@@ -4,7 +4,7 @@
 
 [![DockerHub Pulls](https://img.shields.io/docker/pulls/lordtinshade/saml-idp-testing.svg)](https://hub.docker.com/r/lordtinshade/saml-idp-testing/) [![DockerHub Stars](https://img.shields.io/docker/stars/lordtinshade/saml-idp-testing.svg)](https://hub.docker.com/r/lordtinshade/saml-idp-testing/) [![GitHub Stars](https://img.shields.io/github/stars/tinshade/docker-test-saml-idp.svg?label=github%20stars)](https://github.com/tinshade/docker-test-saml-idp) [![GitHub Forks](https://img.shields.io/github/forks/tinshade/docker-test-saml-idp.svg?label=github%20forks)](https://github.com/tinshade/docker-test-saml-idp) [![GitHub License](https://img.shields.io/github/license/tinshade/docker-test-saml-idp.svg)](https://github.com/tinshade/docker-test-saml-idp)
 
-![Seal of Approval](https://raw.githubusercontent.com/tinshade/docker-test-saml-idp/master/seal.jpg)
+![Seal of Approval](https://raw.githubusercontent.com/tinshade/docker-test-saml-idp/latest/seal.jpg)
 
 Docker container with a plug and play SAML 2.0 Identity Provider (IdP) for development and testing.
 
@@ -19,12 +19,12 @@ The contained version of SimpleSAMLphp is 1.15.2.
 
 ## Supported Tags
 
-- `latest` [(Dockerfile)](https://github.com/tinshade/docker-test-saml-idp/blob/master/Dockerfile)
+- `latest` [(Dockerfile)](https://github.com/tinshade/docker-test-saml-idp/blob/latest/Dockerfile)
 
 
 ## Changelog
 
-See [CHANGELOG.md](https://github.com/tinshade/docker-test-saml-idp/blob/master/docs/CHANGELOG.md) for information about the latest changes.
+See [CHANGELOG.md](https://github.com/tinshade/docker-test-saml-idp/blob/latest/docs/CHANGELOG.md) for information about the latest changes.
 
 
 ## Usage
@@ -98,9 +98,9 @@ Click under `Authentication` > `Test configured authentication sources` > `test-
 
 ## Contributing
 
-See [CONTRIBUTING.md](https://github.com/tinshade/docker-test-saml-idp/blob/master/docs/CONTRIBUTING.md) for information on how to contribute to the project.
+See [CONTRIBUTING.md](https://github.com/tinshade/docker-test-saml-idp/blob/latest/docs/CONTRIBUTING.md) for information on how to contribute to the project.
 
-See [CONTRIBUTORS.md](https://github.com/tinshade/docker-test-saml-idp/blob/master/docs/CONTRIBUTORS.md) for the list of contributors.
+See [CONTRIBUTORS.md](https://github.com/tinshade/docker-test-saml-idp/blob/latest/docs/CONTRIBUTORS.md) for the list of contributors.
 
 
 ## License
